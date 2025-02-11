@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Test task</title>
+  </head>
+  <body>
+    <main>
+      <section class="main-section">
+        <div class="container">
+          <a class="logo-link" href="#">
+            <svg class="logo" width="100" height="30">
+              <use href="./sprite/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="free-container">
+            <p class="free">Безоплатний вебінар</p>
+            <p class="start">
+              Старт: <span class="time-to-start">10 січня 19:30</span>
+            </p>
+          </div>
+          <div class="title-container">
+            <p class="main-title">
+              Навчіться створювати Excel-таблиці на pro-рівні
+            </p>
+            <p class="desc">
+              Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
+              створюйте таблиці швидко і в задоволення
+            </p>
+          </div>
+          <div class="register-container">
+            <div class="decs-reg">Реєструйся просто зараз</div>
+            <div class="timer-box">
+              <div class="time">
+                <span class="days main-days">00</span
+                ><span class="time-name">днів</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="hours main-hours">00</span
+                ><span class="time-name">годин</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="minutes main-minutes">00</span
+                ><span class="time-name">хвилин</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="seconds main-seconds">00</span
+                ><span class="time-name">секунд</span>
+              </div>
+            </div>
+            <button class="open-modal" type="button">Зареєструватися</button>
+          </div>
+        </div>
+        <div class="reg-form">
+          <div class="modal-register-container">
+            <div class="decs-reg">Реєструйся просто зараз</div>
+            <div class="timer-box">
+              <div class="time">
+                <span class="days tablet-days">00</span
+                ><span class="time-name">днів</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="hours tablet-hours">00</span
+                ><span class="time-name">годин</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="minutes tablet-minutes">00</span
+                ><span class="time-name">хвилин</span>
+              </div>
+              <span class="double-dot"> : </span>
+              <div class="time">
+                <span class="seconds tablet-seconds">00</span
+                ><span class="time-name">секунд</span>
+              </div>
+            </div>
+            <form class="form">
+              <input
+                class="input-form"
+                name="name"
+                type="text"
+                placeholder="Введи своє ім’я"
+                required
+              />
+              <input
+                class="input-form"
+                name="email"
+                type="email"
+                placeholder="Введи свій E-mail"
+                required
+              />
+
+              <div class="tel-input-wrapper">
+                <svg class="icon-flag" width="24" height="16">
+                  <use href="./sprite/icon-flag.svg#icon-flag"></use>
+                </svg>
+                <input
+                  class="input-form tel-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="+380 95 -- -- ---"
+                  required
+                />
+              </div>
+
+              <div class="privacy-checkbox-container">
+                <input
+                  name="user-privacy"
+                  id="user-privacy"
+                  type="checkbox"
+                  class="modal-form-checkbox visually-hidden"
+                  required
+                />
+                <label for="user-privacy" class="modal-field-checkbox">
+                  <span class="review-form-checkbox">
+                    <svg
+                      class="review-form-checkbox-icon"
+                      width="11"
+                      height="8"
+                    >
+                      <use href="./sprite/vector.svg#icon-vector-1"></use>
+                    </svg>
+                  </span>
+                  <div class="modal-field-disc">
+                    <span>
+                      Згоден з
+                      <a class="policy-link" href="#"
+                        >Політика конфіденційності</a
+                      >
+                      та
+                      <a class="policy-link" href="#"
+                        >Умови користування послугами</a
+                      >
+                    </span>
+                  </div>
+                </label>
+              </div>
+              <button class="register-btn" type="submit">
+                Зареєструватися
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="backdrop">
+      <div class="modal">
+        <div class="logo-close-container">
+          <div>
+            <svg class="modal-logo" width="100" height="30">
+              <use href="./sprite/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </div>
+          <button class="close-modal">
+            <svg class="close-svg" width="32" height="32">
+              <use href="./sprite/close-btn.svg#icon-Icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-register-container">
+          <div class="decs-reg">Реєструйся просто зараз</div>
+          <div class="timer-box">
+            <div class="time">
+              <span class="days modal-days">00</span
+              ><span class="time-name">днів</span>
+            </div>
+            <span class="double-dot"> : </span>
+            <div class="time">
+              <span class="hours modal-hours">00</span
+              ><span class="time-name">годин</span>
+            </div>
+            <span class="double-dot"> : </span>
+            <div class="time">
+              <span class="minutes modal-minutes">00</span
+              ><span class="time-name">хвилин</span>
+            </div>
+            <span class="double-dot"> : </span>
+            <div class="time">
+              <span class="seconds modal-seconds">00</span
+              ><span class="time-name">секунд</span>
+            </div>
+          </div>
+          <form class="form">
+            <input
+              class="input-form"
+              name="name"
+              type="text"
+              placeholder="Введи своє ім’я"
+              required
+            />
+            <input
+              class="input-form"
+              name="email"
+              type="email"
+              placeholder="Введи свій E-mail"
+              required
+            />
+
+            <div class="tel-input-wrapper">
+              <svg class="icon-flag" width="24" height="16">
+                <use href="./sprite/icon-flag.svg#icon-flag"></use>
+              </svg>
+              <input
+                class="input-form tel-input"
+                name="phone"
+                type="tel"
+                placeholder="+380 95 -- -- ---"
+                required
+              />
+            </div>
+
+            <div class="privacy-checkbox-container">
+              <input
+                name="user-privacy"
+                id="user-privacy"
+                type="checkbox"
+                class="modal-form-checkbox visually-hidden"
+                required
+              />
+              <label for="user-privacy" class="modal-field-checkbox">
+                <span class="review-form-checkbox">
+                  <svg class="review-form-checkbox-icon" width="11" height="8">
+                    <use href="./sprite/vector.svg#icon-vector-1"></use>
+                  </svg>
+                </span>
+                <div class="modal-field-disc">
+                  <span>
+                    Згоден з
+                    <a class="policy-link" href="#"
+                      >Політика конфіденційності</a
+                    >
+                    та
+                    <a class="policy-link" href="#"
+                      >Умови користування послугами</a
+                    >
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <button class="register-btn" type="submit">Зареєструватися</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/timer.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/sendForm.js" type="module"></script>
+  </body>
+</html>
