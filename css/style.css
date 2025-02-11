@@ -273,6 +273,10 @@ a {
 .review-form-checkbox-icon {
   stroke-width: 2px;
   fill: none;
+  stroke: transparent;
+}
+
+.modal-form-checkbox:checked ~ .review-form-checkbox-icon {
   stroke: #0f7c41;
 }
 
